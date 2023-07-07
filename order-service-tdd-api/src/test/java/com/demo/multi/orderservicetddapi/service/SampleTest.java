@@ -10,6 +10,19 @@ class SampleTest {
 
     @Test
     void test1() {
-        Assertions.fail("this is failed");
+        int i = 12;
+        Assertions.assertThat(i)
+                .isEqualTo(12)
+                .isEven();
     }
+
+    @Test
+    void test2() {
+        int i = 2;
+        Assertions.assertThat(i)
+                .isEqualTo(2)
+                .isEven();
+    }
+
+
 }
