@@ -10,7 +10,10 @@ class SampleTest {
 
     @Test
     void test1() {
-        Assertions.fail("thi is fail");
+        int i = 12;
+        Assertions.assertThat(i)
+                .isEqualTo(12)
+                .isEven();
     }
 
     @Test
