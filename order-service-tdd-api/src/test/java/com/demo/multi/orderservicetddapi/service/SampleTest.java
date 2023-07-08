@@ -24,5 +24,13 @@ class SampleTest {
                 .isEven();
     }
 
+    @Test
+    void test3() {
+        int i = 22;
+        Assertions.assertThat(i)
+                .isEqualTo(22)
+                .isEven();
+    }
+
 
 }
